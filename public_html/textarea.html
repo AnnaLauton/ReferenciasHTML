@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Referências HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <main>
+                <article>
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">Referências HTML5</label>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Tag HTML &lt;textarea&gt;</h1>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Um controle de entrada de texto de várias linhas (text area):</p>
+                        <div class="dCodigo">
+                            &lt;label for=&quot;exemp&quot;&gt;Exemplo:&lt;/label&gt;<br>
+                            <br>&lt;textarea id=&quot;exemp&quot; name=&quot;exemp&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;<br>
+                            &nbsp;Aqui mostramos as referências para HTML5.
+                            <br>&lt;/textarea&gt;
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Definição e uso</h2>
+                    <div class = "dDefinicao">
 
+                        <p>A tag &lt;textarea&gt; define um controle de entrada de texto de várias linhas.</p><br>
+                        <p>O elemento &lt;textarea&gt; é frequentemente usado em um formulário, para coletar entradas do usuário, como comentários ou análises.</p><br>
+                        <p>Uma textarea pode conter um número ilimitado de caracteres e o texto é renderizado em uma fonte de largura fixa (geralmente Courier).</p><br>
+                        <p>O tamanho de uma área de texto é especificado pelos atributos &lt;cols&gt; e &lt;rows&gt; (ou com CSS).</p><br>
+                        <p>O atributo name é necessário para referenciar os dados do formulário após o formulário ser enviado (se você omitir o atributo name, nenhum dado da textarea será enviado).</p><br>
+                        <p>O atributo id é necessário para associar a textarea a um rótulo.</p><br>
+                        <p><strong>Dica:</strong> Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!</p>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Atributos</h2>
+
+                    <table class = "tReferencias" style="padding-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>autofocus</td>
+                                <td>autofocus</td>
+                                <td>Especifica que uma textarea deve receber foco automaticamente quando a página carrega</td>
+                            </tr>
+                            <tr>
+                                <td>cols</td>
+                                <td>number</td>
+                                <td>Especifica a largura visível de uma textarea</td>
+                            </tr>
+                            <tr>
+                                <td>dirname</td>
+                                <td>textareaname.dir</td>
+                                <td>Especifica que a direção do texto da textarea será enviada</td>
+                            </tr>
+                            <tr>
+                                <td>disabled</td>
+                                <td>disabled</td>
+                                <td>Especifica que uma textarea deve ser desativada</td>
+                            </tr>
+                            <tr>
+                                <td>form</td>
+                                <td>form_id</td>
+                                <td>Especifica a qual formulário a área de texto pertence</td>
+                            </tr>
+                            <tr>
+                                <td>maxlength</td>
+                                <td>number</td>
+                                <td>Especifica o número máximo de caracteres permitidos na área de texto</td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>text</td>
+                                <td>Especifica um nome para uma área de texto</td>
+                            </tr>
+                            <tr>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>Especifica uma pequena dica que descreve o valor esperado de uma área de texto</td>
+                            </tr>
+                            <tr>
+                                <td>readonly</td>
+                                <td>readonly</td>
+                                <td>Especifica que uma área de texto deve ser somente leitura</td>
+                            </tr>
+                            <tr>
+                                <td>required</td>
+                                <td>required</td>
+                                <td>Especifica que uma área de texto é necessária / deve ser preenchida</td>
+                            </tr>
+                            <tr>
+                                <td>rows</td>
+                                <td>number</td>
+                                <td>Especifica o número visível de linhas em uma área de texto</td>
+                            </tr>
+                            <tr>
+                                <td>wrap</td>
+                                <td>hard<br>soft</td>
+                                <td>Especifica como o texto em uma área de texto deve ser quebrado quando submetido em um formulário</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h2 class="titulo">Outros exemplos</h2>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Desativar a opção de redimensionamento padrão</p>
+                        <div class="dCodigo">
+                            &lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>textarea {<br>&nbsp; resize: none;<br>}<br>&lt;/style&gt;<br>
+                            &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;label for=&quot;exemp&quot;&gt;Exemplo:&lt;/label&gt;<br>
+                            <br>&lt;textarea id=&quot;exemp&quot; name=&quot;exemp&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;<br>
+                            &nbsp;Aqui é um exemplo da utilização.
+                            <br>&lt;/textarea&gt;<br><br>&lt;/body&gt;<br>
+                            &lt;/html&gt; 
+                        </div>
+                        <p>O exemplo a seguir mostra uma área de texto muito simples, com um número definido de linhas e colunas e algum conteúdo.</p>
+                        <div class="dCodigo">
+                            &lt;textarea name=&quot;textarea&quot; rows=&quot;10&quot; cols=&quot;50&quot;&gt;<br>
+                            &nbsp;Aqui é um exemplo simples da utilização.
+                            <br>&lt;/textarea&gt;
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerGeral">
+                            <div class="sec sobre">
+                                <h2>Sobre</h2>
+                                <p>Site desenvolvido por Anna Júlia Costa Lauton, Matteus Felippe Batista Silva e Talita Rodrigues de Souza 
+                                    para a disciplina de Desenvolvimento Web do Curso Bacharelado em Ciência da Computação do Instituto Federal 
+                                    do Norte de Minas Gerais - Campus Montes Claros.</p>
+                            </div>
+
+                            <div class="sec links">
+                                <h2>Links</h2>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                                    <li><a href="sobre.html">SOBRE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="copyrightText">
+                        <p>Copyright © 2021 | Todos os direitos reservados</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
