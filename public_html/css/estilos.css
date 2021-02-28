@@ -74,8 +74,12 @@ nav ul li a:hover{
     color:#fff;
 }
 
-.tReferencias tbody tr:nth-child(2n){
+.tReferencias tbody tr{
     background: #ccc;
+}
+
+.tReferencias tbody tr:nth-child(2n){
+    background: #A9A9A9;
 }
 .tReferencias th , table td{
     padding: 13px 0;
