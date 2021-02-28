@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Referências HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <main>
+                <article>
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">Referências HTML5</label>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Tag HTML &lt;track&gt;</h1>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>O exemplo a seguir exibe um vídeo com faixas de legendas para dois idiomas:</p>
+                        <div class="dCodigo">
+                            &lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;<br>
+                            &nbsp; &lt;source src=&quot;filme.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+                            &nbsp; &lt;source src=&quot;filme.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
+                            &nbsp; &lt;track src=&quot;filme.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;en&quot; label=&quot;English&quot;&gt;<br>
+                            &nbsp; &lt;track src=&quot;filme.vtt&quot; kind=&quot;subtitles&quot; srclang=&quot;no&quot; label=&quot;Norwegian&quot;&gt;<br>
+                            &lt;/video&gt;
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Definição e uso</h2>
+                    <div class = "dDefinicao">
+                        <p>A tag &lt;track&gt; especifica faixas de texto para elementos &lt;audio&gt; ou &lt;video&gt;.</p><br>
+                        <p>Este elemento é usado para especificar legendas, arquivos de legendas ou outros arquivos contendo texto, que devem ser visíveis durante a reprodução da mídia.</p><br>
+                        <p>Tracks são formatadas no formato WebVTT (arquivos .vtt).</p>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Atributos</h2>
 
+                    <table class = "tReferencias" style="padding-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>defaut</td>
+                                <td>default</td>
+                                <td>Especifica o track que deve ser habilitado se as preferências do usuário não indicarem que outro track seria mais apropriado</td>
+                            </tr>
+                            <tr>
+                                <td>kind</td>
+                                <td>captions<br>chapters<br>descriptions<br>metadata<br>subtitles</td>
+                                <td>Especifica o tipo da track de texto</td>
+                            </tr>
+                            <tr>
+                                <td>label</td>
+                                <td>text</td>
+                                <td>Especifica o título da track de texto</td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>URL</td>
+                                <td>Especifica a URL do arquivo da track</td>
+                            </tr>
+                            <tr>
+                                <td>srclang</td>
+                                <td>language_code</td>
+                                <td>Especifica o idioma dos dados de texto do track (obrigatório se kind = "subtitles")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h2 class="titulo">Outros exemplos</h2>
+                    <div class="dExemplo">
+                        <h3>Exemplos</h3>
+                        <p>Este exemplo é em relação a um vídeo:</p>
+                        <div class="dCodigo">
+                            &lt;video controls src="video.mp4"&gt;<br>
+                            &nbsp;&lt;track default kind="captions" srclang="en"<br>
+                            &nbsp;src="video.vtt" /&gt;<br>
+                            &nbsp;Desculpa, seu navegador não suporta!<br>
+                            &lt;/video&gt;
+                        </div>
+                        <p>Este exemplo é em relação a um audio:</p>
+                        <div class="dCodigo">
+                            &lt;audio controls&gt;<br>
+                                &nbsp;&lt;source src = "audio.mp3"&gt;<br>
+                                &nbsp;&lt;track src = "subtitles.vtt" kind = "subtitles" srclang = "en" label =" English"&gt;<br>
+                                &nbsp;&lt;p>:Desculpa, seu navegador não suporta!&lt;/p&gt;<br>
+                            &lt;/audio&gt;
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerGeral">
+                            <div class="sec sobre">
+                                <h2>Sobre</h2>
+                                <p>Site desenvolvido por Anna Júlia Costa Lauton, Matteus Felippe Batista Silva e Talita Rodrigues de Souza 
+                                    para a disciplina de Desenvolvimento Web do Curso Bacharelado em Ciência da Computação do Instituto Federal 
+                                    do Norte de Minas Gerais - Campus Montes Claros.</p>
+                            </div>
+                            <div class="sec links">
+                                <h2>Links</h2>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                                    <li><a href="sobre.html">SOBRE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="copyrightText">
+                        <p>Copyright © 2021 | Todos os direitos reservados</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
