@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Referências HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <main>
+                <article>
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">Referências HTML5</label>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Tag HTML &lt;video&gt;</h1>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Reproduza um vídeo:</p>
+                        <div class="dCodigo">
+                            &lt;video width="320" height="240" controls&gt;<br>
+                            &nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                            &nbsp;&lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+                            &nbsp;Your browser does not support the video tag.<br>
+                            &lt;/video&gt;<br>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Definição e uso</h2>
+                    <div class = "dDefinicao">
+                        <p>A tag &lt;video&gt; é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.</p><br>
+                        <p>A tag &lt;video&gt; contém uma ou mais tags &lt;source&gt; com diferentes fontes de vídeo. O navegador escolherá a primeira fonte que suporta.</p><br>
+                        <p>O texto entre as tags &lt;video&gt; e &lt;/video&gt; só será exibido em navegadores que não suportam o elemento &lt;video&gt;.</p><br>
+                        <p>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.</p><br>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Atributos</h2>
 
+                    <table class = "tReferencias" style="padding-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>autoplay</td>
+                                <td>Especifica que o vídeo começará a ser reproduzido assim que estiver pronto</td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>controls</td>
+                                <td>Especifica que os controles de vídeo devem ser exibidos (como um botão reproduzir / pausar etc.).</td>
+                            </tr><
+                            <tr>
+                                <td>height</td>
+                                <td><i>pixels</i></td>
+                                <td>Define a altura do player de vídeo</td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>loop</td>
+                                <td>Especifica que o vídeo começará de novo, toda vez que for concluído</td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>muted</td>
+                                <td>Especifica que a saída de áudio do vídeo deve ser silenciada</td>
+                            </tr>
+                            <tr>
+                                <td>poster</td>
+                                <td><i>URL</i></td>
+                                <td>Especifica uma imagem a ser mostrada durante o download do vídeo ou até que o usuário pressione o botão de reprodução</td>
+                            </tr>
+                            <tr>
+                                <td>preload</td>
+                                <td>auto<br>metadata <br>none</td>
+                                <td>Especifica se e como o autor acha que o vídeo deve ser carregado quando a página carrega</td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td><i>URL</i></td>
+                                <td>Especifica o URL do arquivo de vídeo</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td><i>pixels</i></td>
+                                <td>Define a largura do player de vídeo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h2 class="titulo">Outros exemplos</h2>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Um exemplo de vídeo com legendas:</p>
+                        <div class="dCodigo">
+                            &lt;video src="foo.ogg"&gt;<br>
+                            &nbsp;&lt;track kind="subtitles" src="foo.en.vtt" srclang="en" label="English"&gt;<br>
+                            &nbsp;&lt;track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska"&gt;<br>
+                            &lt;/video&gt;<br>            
+                        </div>
+                        <p>Exemplo simples de vídeo:</p>
+                        <div class="dCodigo">
+                            &lt;video src="arquivovideo.ogg" autoplay poster="imagemprevia.jpg"&gt;<br>
+                            &nbsp;Desculpa, o seu navegador não suporta vídeos incorporados,<br>
+                            &nbsp;mas você pode &lt;a href="videofile.ogg"&gt;baixá-lo&lt;/a&gt;<br>
+                            &nbsp;e assistir pelo seu reprodutor de mídia favorito!<br>
+                            &lt;/video&gt;
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerGeral">
+                            <div class="sec sobre">
+                                <h2>Sobre</h2>
+                                <p>Site desenvolvido por Anna Júlia Costa Lauton, Matteus Felippe Batista Silva e Talita Rodrigues de Souza 
+                                    para a disciplina de Desenvolvimento Web do Curso Bacharelado em Ciência da Computação do Instituto Federal 
+                                    do Norte de Minas Gerais - Campus Montes Claros.</p>
+                            </div>
+
+                            <div class="sec links">
+                                <h2>Links</h2>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                                    <li><a href="sobre.html">SOBRE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="copyrightText">
+                        <p>Copyright © 2021 | Todos os direitos reservados</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
