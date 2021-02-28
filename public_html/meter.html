@@ -1,1 +1,139 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Referências HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <main>
+                <article>
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">Referências HTML5</label>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Tag HTML &lt;meter&gt;</h1>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Use o elemento medidor para medir dados dentro de um determinado intervalo (um medidor):</p>
+                        <div class="dCodigo">
+                            &lt;label for="disk_c"&gt;Disk usage C:&lt;/label&gt;<br>
+                            &lt;meter id="disk_c" value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;<br>
+
+                            <br>&lt;label for="disk_d"&gt;Disk usage D:&lt;/label&gt;<br>
+                            &lt;meter id="disk_d" value="0.6"&gt;60%&lt;/meter&gt;<br>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Definição e uso</h2>
+                    <div class = "dDefinicao">
+                        <p>A tag &lt;meter&gt; define uma medição escalar dentro de uma faixa conhecida ou um valor fracionário. 
+                            Isso também é conhecido como medidor.</p>
+                        <p>Exemplos: uso do disco, relevância do resultado de uma consulta, etc.</p><br>
+                        <p><strong>Observação:</strong> A tag &lt;meter&gt; não deve ser usada para indicar o progresso (como em uma barra de progresso). Para barras de progresso, use a tag &lt;progress&gt;.</p> <br>
+                        <p><strong>Dica:</strong>Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!</p>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Atributos</h2>
+
+                    <table class = "tReferencias" style="padding-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>form</td>
+                                <td>form_id</td>
+                                <td>Especifica a qual formulário o elemento &lt;meter&gt; pertence</td>
+                            </tr>
+                            <tr>
+                                <td>high</td>
+                                <td>number</td>
+                                <td>Especifica o intervalo que é considerado um valor alto</td>
+                            </tr><
+                            <tr>
+                                <td>low</td>
+                                <td>number</td>
+                                <td>Especifica o intervalo que é considerado um valor baixo</td>
+                            </tr>
+                            <tr>
+                                <td>max</td>
+                                <td>number</td>
+                                <td>Especifica o valor máximo do intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>min</td>
+                                <td>number</td>
+                                <td>Especifica o valor mínimo do intervalo. O valor padrão é 0</td>
+                            </tr>
+                            <tr>
+                                <td>optimum</td>
+                                <td>number</td>
+                                <td>Especifica qual valor é o valor ideal para o medidor</td>
+                            </tr>
+                            <tr>
+                                <td>value</td>
+                                <td>number</td>
+                                <td>Requerido. Especifica o valor atual do medidor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h2 class="titulo">Outros exemplos</h2>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Um exemplo simples da sua utilização:</p>
+                        <div class="dCodigo">
+                            &lt;p&gt;Aqueça o forno para &lt;meter min="200" max="500" value="350"&gt;350 graus&lt;/meter&gt.&lt;/p&gt;
+                        </div>
+                        <p>Exemplo de intervalo com High e Low:</p>
+                        <p>Note que nesse exemplo o atributo min foi omitido; isso é permitido, pois ele irá ser, por padrão, 0.</p>
+                        <div class="dCodigo">
+                            &lt;p&gt;Ele recebeu &lt;meter low="69" high="80" max="100" value="84"&gt;B&lt;/meter&gt; no exame.&lt;/p&gt;
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerGeral">
+                            <div class="sec sobre">
+                                <h2>Sobre</h2>
+                                <p>Site desenvolvido por Anna Júlia Costa Lauton, Matteus Felippe Batista Silva e Talita Rodrigues de Souza 
+                                    para a disciplina de Desenvolvimento Web do Curso Bacharelado em Ciência da Computação do Instituto Federal 
+                                    do Norte de Minas Gerais - Campus Montes Claros.</p>
+                            </div>
+
+                            <div class="sec links">
+                                <h2>Links</h2>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                                    <li><a href="sobre.html">SOBRE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="copyrightText">
+                        <p>Copyright © 2021 | Todos os direitos reservados</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+
