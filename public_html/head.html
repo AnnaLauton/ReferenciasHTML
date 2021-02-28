@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Referências HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <main>
+                <article>
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label class="logo">Referências HTML5</label>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Tag HTML &lt;head&gt;</h1>
+                    <div class="dExemplo">
+                        <h3>Exemplo</h3>
+                        <p>Um documento HTML simples, com uma tag &lt;title&gt; dentro da seção head:</p>
+                        <div class="dCodigo">
+                            &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;pt-BR&quot;&gt;<br>
+                            &lt;head&gt;<br>
+                            &nbsp;
+                            &lt;title&gt;Exemplo&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;Este é um paragrafo.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt; 
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Definição e uso</h2>
+                    <div class = "dDefinicao">
+                        <p>O elemento &lt;head&gt; é um contêiner para metadados (dados sobre dados) e é colocado entre a tag &lt;html&gt; e a tag &lt;body&gt;</p><br>
+                        <p>Metadados são dados sobre o documento HTML. Os metadados não são exibidos.</p><br>
+                        <p>Os metadados normalmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras meta informações.</p><br>
+                        <p>Os seguintes elementos podem ir dentro do elemento &lt;head&gt;:
+                        <p>&nbsp;&nbsp;- &lt;title&gt; (exigido em cada documento HTML)<br>
+                            &nbsp;&nbsp;- &lt;style&gt;<br>
+                            &nbsp;&nbsp;- &lt;base&gt;<br>
+                            &nbsp;&nbsp;- &lt;link&gt;<br>
+                            &nbsp;&nbsp;- &lt;meta&gt;<br>
+                            &nbsp;&nbsp;- &lt;script&gt;<br>
+                            &nbsp;&nbsp;- &lt;noscript&gt;
+                    </div>
+                    <hr>
+                    <h2 class="titulo">Atributos</h2>
+                    <div class = "dDefinicao">
+                        <p>A tag &lt;head&gt; suporta os atributos globais em HTML.</p>
+                    </div>
 
+                    <hr>
+                    <h2 class="titulo">Outros exemplos</h2>
+                    <div class="dExemplo">
+                        <h3>Exemplos</h3>
+                        <p>A tag &lt;base&gt; (especifica uma URL padrão e destino para todos os links em uma página) vai para &lt;head&gt;:</p>
+                        <div class="dCodigo">
+                            &lt;html&gt;<br>&lt;head&gt;<br>&nbsp; &lt;base href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot;&gt;<br>
+                            &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;img src=&quot;images/stickman.gif&quot; width=&quot;24&quot; 
+                            height=&quot;39&quot; alt=&quot;Stickman&quot;&gt;<br>&lt;a href=&quot;tags/tag_base.asp&quot;&gt;Tag base HTML&lt;/a&gt;<br>
+                            <br>&lt;/body&gt;<br>&lt;/html&gt; 
+                        </div>
+                        <p>A tag &lt;style&gt; (adiciona informações de estilo a uma página) vai dentro de &lt;head&gt;:</p>
+                        <div class="dCodigo">
+                            &lt;html&gt;<br>&lt;head&gt;<br>&nbsp; &lt;style&gt;<br>&nbsp; &nbsp; p {color:blue;}<br>
+                            &nbsp;
+                            &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;Um 
+                            parágrafo.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt; 
+                        </div>
+                        <p>A tag &lt;link&gt; (links para uma folha de estilo externa) vai dentro de &lt;head&gt;:</p>
+                        <div class="dCodigo">
+                            &lt;html&gt;<br>&lt;head&gt;<br>&nbsp; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;<br>
+                            &lt;/head&gt;<br>&lt;body&gt;<br><br>
+                            &lt;p&gt;Um exemplo!&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerGeral">
+                            <div class="sec sobre">
+                                <h2>Sobre</h2>
+                                <p>Site desenvolvido por Anna Júlia Costa Lauton, Matteus Felippe Batista Silva e Talita Rodrigues de Souza 
+                                    para a disciplina de Desenvolvimento Web do Curso Bacharelado em Ciência da Computação do Instituto Federal 
+                                    do Norte de Minas Gerais - Campus Montes Claros.</p>
+                            </div>
+
+                            <div class="sec links">
+                                <h2>Links</h2>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="referencias.html">REFERÊNCIAS</a></li>
+                                    <li><a href="sobre.html">SOBRE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="copyrightText">
+                        <p>Copyright © 2021 | Todos os direitos reservados</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>
